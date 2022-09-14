@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+
+    <title>product</title>
+
+</head>
+
+<body>
+
+    {{>navbar}}
+    <div class="product">
+        <h1>Display Product.......</h1>
+        <div className="view" style="display: grid; gap:30px; grid-template-columns: repeat(4, 1fr);">
+        {{#each productData}}
+        <tr>
+            {{!-- <td>{{_id}}</td> --}}
+        
+
+        </tr>
+    
+        <div className="card" key={{_id}}>
+            <img src={{image}} alt="" />
+            <h4>{{title}}</h4>
+            <h5>{{price}}</h5>
+                  <button class="btn1"> Add to cart</button>
+
+        </div>
+        {{/each}}
+      </div>
+    
+    </div>
+
+</body>
+
+</html>

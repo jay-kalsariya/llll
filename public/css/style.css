@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  margin: 0;  
+  padding: 0;
+  background-image: linear-gradient(to bottom right, red, yellow);     
+  height: 100vh;
+
+}
+
+ 
+/* Registation */
+
+
+
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+  border: 2px solid;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input
+{
+  width: 100%;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+
+}
+
+.wrapper .form .inputfield label{
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+ font-size: 14px;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 67px;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+ /* login page */
+
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid;
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #2691d9;
+  transition: .5s;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+.navbar-nav{
+
+    position: absolute;
+    right: 10px;
+}
+.home{
+  text-align: center;
+  margin-top: 183px;
+}
+
+.demo{
+  text-align: center;
+  margin-top: 183px;
+}
+
+/* product css */
+.product{
+  text-align: center;
+}
+img {
+     height: 198px;
+    border-radius: 13px;
+    border: 4px solid brown;
+    border-radius: 13px;
+    background: white;
+    padding: 8px;
+    width: 186px;
+    border-radius: 10px;
+
+    box-shadow: 4px -1px 14px 5px seagreen;
+}
+.card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px -9px 14px 5px seagreen;
+}
+
+
+.view{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #513282;
+}
+
+.heading {
+  padding: 25px 0;
+}
+.cartCount {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+.navLink {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+.cartCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 5px;
+}
+/* .relative{
+  
+} */
+/* button */
+.btn1{
+ 
+    border: none;
+    outline: none;
+    background: #764abc;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+/* .btn2{
+ 
+  border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+} */
+.card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px -9px 14px 5px seagreen;
+}
